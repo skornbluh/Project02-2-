@@ -1,4 +1,3 @@
-
 public class Account {
 	private String manager;
 	private int code;
