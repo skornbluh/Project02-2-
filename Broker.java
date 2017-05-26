@@ -1,16 +1,19 @@
-
 public class Broker extends Person {
-	private int secID;
+	private String secID;
 	
-	public Broker(String firstName, String lastName, String street, String city, String state, int zipCode, String country, String emailAddress, int secID) {
-		super(firstName, lastName, street, city, state, zipCode, country, emailAddress);
+	public Broker(String id, String firstName, String lastName, String street, String city, String state, String zipCode, String country, String[] emailAddress, String secID) {
+		super(id, firstName, lastName, street, city, state, zipCode, country, emailAddress);
 		this.secID = secID;
+	}
+	
+	public boolean isBroker() {
+		return true;
 	}
 	
 	// this will be either E or J
 	private String position;
 	
-	public int getSecID() {
+	public String getSecID() {
 		return secID;
 	}
 	
