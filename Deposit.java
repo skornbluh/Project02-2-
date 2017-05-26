@@ -1,4 +1,3 @@
-
 public class Deposit extends Account {
 	private double apr;
 	
