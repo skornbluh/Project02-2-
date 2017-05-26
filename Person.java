@@ -1,14 +1,15 @@
-public class Person {
+public abstract class Person {
 	private String firstName;
 	private String lastName;
 	private String street;
 	private String city;
 	private String state;
-	private int zipCode;
+	private String zipCode;
 	private String country;
-	private String emailAddress;
+	private String[] emailAddress;
+	private String id;
 	
-	public Person(String firstName, String lastName, String street, String city, String state, int zipCode, String country, String emailAddress) {
+	public Person(String id, String firstName, String lastName, String street, String city, String state, String zipCode, String country, String[] emailAddress) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.street = street;
@@ -17,8 +18,18 @@ public class Person {
 		this.zipCode = zipCode;
 		this.country = country;
 		this.emailAddress = emailAddress;
-		
+		this.id = id;
 	}
+	
+	public String getId() {
+		return id;
+	}
+
+	public abstract boolean isBroker();
+
+	
+		
+	
 	
 	public String getFirstName() {
 		return firstName;
@@ -50,10 +61,10 @@ public class Person {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public int getZipCode() {
+	public String getZipCode() {
 		return zipCode;
 	}
-	public void setZipCode(int zipCode) {
+	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
 	}
 	public String getCountry() {
@@ -62,10 +73,10 @@ public class Person {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public String getEmailAddress() {
+	public String[] getEmailAddress() {
 		return emailAddress;
 	}
-	public void setEmailAddress(String emailAddress) {
+	public void setEmailAddress(String[] emailAddress) {
 		this.emailAddress = emailAddress;
 	}
 	
