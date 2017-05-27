@@ -16,8 +16,10 @@ public class Client extends Person {
 		sb.append("State: " + getState() + " \n");
 		sb.append("Zipcode: " + getZipCode() + " \n");
 		sb.append("Country: " + getCountry() + " \n");
-		sb.append("Email Address: " + getEmailAddress() + " \n");
-		
+		String[] email = getEmailAddress();
+		for (int i = 0; i < email.length; i++) {
+			sb.append("Email Address " + (i+1) + ": " + email[i] + " \n");
+		}
 		return sb.toString();
 	}
 	
