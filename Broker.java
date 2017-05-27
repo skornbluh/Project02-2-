@@ -6,6 +6,23 @@ public class Broker extends Person {
 		this.secID = secID;
 	}
 	
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		System.out.println("*****************Broker***************** \n");
+		sb.append("ID: " + getId() + " \n");
+		sb.append("First name: " + getFirstName() + " \n");
+		sb.append("Last name: " + getLastName() + " \n");
+		sb.append("Street: " + getStreet() + " \n");
+		sb.append("City: " + getCity() + " \n");
+		sb.append("State: " + getState() + " \n");
+		sb.append("Zipcode: " + getZipCode() + " \n");
+		sb.append("Country: " + getCountry() + " \n");
+		sb.append("Email Address: " + getEmailAddress() + " \n");
+		sb.append("Sec ID: " + getSecID() + " \n");
+		
+		return sb.toString();
+	}
+	
 	public boolean isBroker() {
 		return true;
 	}
