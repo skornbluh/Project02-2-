@@ -1,10 +1,9 @@
-
 public class Investment extends Account{
 	private double quarterlyDividend;
 	private double baseRateOfReturn;
 	
-	public Investment(String manager, int code, char identifier, String label, double quarterlyDividend, double baseRateOfReturn) {
-		super(manager, code, identifier, label);
+	public Investment(String code, String label, double quarterlyDividend, double baseRateOfReturn) {
+		super(code, label);
 		this.quarterlyDividend = quarterlyDividend;
 		this.baseRateOfReturn = baseRateOfReturn;
 	}
