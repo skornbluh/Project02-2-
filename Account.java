@@ -1,30 +1,17 @@
-public class Account {
-	private String manager;
-	private int code;
-	private char identifier;
+public abstract class Account {
+	private String code;
 	private String label;
 	
-	public Account(String manager, int code, char identifier, String label) {
-		this.manager = manager;
+	public Account(String code, String label) {
 		this.code = code;
-		this.identifier = identifier;
 		this.label = label;
 		
 	}
-	public String getManager() {
-		return manager;
-	}
-	public void setManager(String manager) {
-		this.manager = manager;
-	}
-	public int getCode() {
+	public String getCode() {
 		return code;
 	}
-	public void setCode(int code) {
+	public void setCode(String code) {
 		this.code = code;
-	}
-	public char getIdentifier() {
-		return identifier;
 	}
 
 	public String getLabel() {
