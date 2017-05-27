@@ -27,6 +27,8 @@ public class StockAccount extends Account {
 			this.betaMeasure = betaMeasure;
 			this.stockSymbol = stockSymbol;
 			this.sharePrice = sharePrice;
+			this.baseRateOfReturn = baseRateOfReturn;
+			this.quarterlyDividend = quarterlyDividend;
 			
 		
 	}
