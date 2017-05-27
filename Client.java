@@ -5,6 +5,22 @@ public class Client extends Person {
 		super(id, firstName, lastName, street, city, state, zipCode, country, emailAddress);
 	}
 
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		System.out.println("*****************Client***************** \n");
+		sb.append("ID: " + getId() + " \n");
+		sb.append("First name: " + getFirstName() + " \n");
+		sb.append("Last name: " + getLastName() + " \n");
+		sb.append("Street: " + getStreet() + " \n");
+		sb.append("City: " + getCity() + " \n");
+		sb.append("State: " + getState() + " \n");
+		sb.append("Zipcode: " + getZipCode() + " \n");
+		sb.append("Country: " + getCountry() + " \n");
+		sb.append("Email Address: " + getEmailAddress() + " \n");
+		
+		return sb.toString();
+	}
+	
 	public boolean isBroker() {
 		return false;
 	}
