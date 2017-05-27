@@ -26,10 +26,6 @@ public abstract class Person {
 	}
 
 	public abstract boolean isBroker();
-
-	
-		
-	
 	
 	public String getFirstName() {
 		return firstName;
